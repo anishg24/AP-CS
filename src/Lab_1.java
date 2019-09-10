@@ -68,8 +68,6 @@ public class Lab_1
 		System.out.println("3x            = -15");
 		System.out.print("x             =   5");
 		
-		
-		
 		// End
 	}
 }

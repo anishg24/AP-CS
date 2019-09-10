@@ -62,27 +62,27 @@ public class Lab_2 {
 		// This is how we initialize scanners that read input from the user.
 		Scanner read = new Scanner(System.in);
 		
-//		// The print line tells the user what to expect.
-//		// Replace after you know what the code does.
-//		System.out.println("Enter 5 numbers to find the mean of! ");
-//
-//		int num_of_terms = 5;
-//		int total = 0;
-//
-//		// the two statements below are written differently, but accomplish the same task.
-//		total = total + read.nextInt(); // total is replaced with the addition of a new number.
-//		total += read.nextInt();
-//		total += read.nextInt();
-//		total += read.nextInt();
-//		total += read.nextInt();
-//
-//		//	Later, we will talk about how to do repeated tasks (called loops).
-//
-//		double mystery = total/num_of_terms;
-//		System.out.println("The mean of the 5 numbers is " + mystery);
+		// The print line tells the user what to expect.
+		// Replace after you know what the code does.
+		System.out.println("Enter 5 numbers to find the mean of! ");
+
+		int num_of_terms = 5;
+		int total = 0;
+
+		// the two statements below are written differently, but accomplish the same task.
+		total = total + read.nextInt(); // total is replaced with the addition of a new number.
+		total += read.nextInt();
+		total += read.nextInt();
+		total += read.nextInt();
+		total += read.nextInt();
+
+		//	Later, we will talk about how to do repeated tasks (called loops).
+
+		double mystery = total/num_of_terms;
+		System.out.println("The mean of the 5 numbers is " + mystery);
 
 		// Uncomment this after Question 2
-		
+
 		// WRITE YOUR OWN CODE
 		System.out.print("a = ");
 		double a_val = read.nextInt();
