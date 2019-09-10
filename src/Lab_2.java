@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.math.*;
 
 public class Lab_2 {
 
@@ -45,15 +46,15 @@ public class Lab_2 {
 		
 		System.out.println("Example 3:");
 		//Example 3	
-		double catering_cost = 530;
-		System.out.println("The lunch catering costs $" + catering_cost + ".");
-		System.out.println("There are 6 rows with x number of students.");
-		System.out.println("I have " + 6*x+1 + " number of people (including myself) accounted for.");
-		System.out.println("Therefore, when I round up, each person needs to pay $" + (int)(catering_cost/(6*x+1)) );
+		double	catering_cost = 530;
+		System.out.println("The lunch catering costs $" + (int)catering_cost + ".");
+		System.out.println("There are 6 rows with " +  x + " number of students.");
+		System.out.println("I have " + (6*x+1) + " number of people (including myself) accounted for.");
+		System.out.println("Therefore, when I round up, each person needs to pay $" + (int)(catering_cost/(6*x)+1));
 		
 		System.out.println();
 		
-		/*// Uncomment this portion after answering questions 2 and the closing * / below.
+		// Uncomment this portion after answering questions 2 and the closing * / below.
 		
 		// Example 4
 		System.out.println("Example 4:");
@@ -61,30 +62,41 @@ public class Lab_2 {
 		// This is how we initialize scanners that read input from the user.
 		Scanner read = new Scanner(System.in);
 		
-		// The print line tells the user what to expect.
-		// Replace after you know what the code does.
-		System.out.println(" !REPLACE! "); 
-		
-		int num_of_terms = 5;
-		int total = 0;
-		
-		// the two statements below are written differently, but accomplish the same task.
-		total = total + read.nextInt(); // total is replaced with the addition of a new number.
-		total += read.nextInt();
-		total += read.nextInt();
-		total += read.nextInt();
-		total += read.nextInt();
+//		// The print line tells the user what to expect.
+//		// Replace after you know what the code does.
+//		System.out.println("Enter 5 numbers to find the mean of! ");
+//
+//		int num_of_terms = 5;
+//		int total = 0;
+//
+//		// the two statements below are written differently, but accomplish the same task.
+//		total = total + read.nextInt(); // total is replaced with the addition of a new number.
+//		total += read.nextInt();
+//		total += read.nextInt();
+//		total += read.nextInt();
+//		total += read.nextInt();
+//
+//		//	Later, we will talk about how to do repeated tasks (called loops).
+//
+//		double mystery = total/num_of_terms;
+//		System.out.println("The mean of the 5 numbers is " + mystery);
 
-		//	Later, we will talk about how to do repeated tasks (called loops).
-	
-		double mystery = total/num_of_terms;
-		System.out.println("The _(replace)_ of the 5 numbers is " + mystery);
-		
-		*/ // Uncomment this after Question 2
+		// Uncomment this after Question 2
 		
 		// WRITE YOUR OWN CODE
-		// START
-		
-		// END
+		System.out.print("a = ");
+		double a_val = read.nextInt();
+		System.out.print("b = ");
+		double b_val = read.nextInt();
+		System.out.print("c = ");
+		double c_val = read.nextInt();
+
+		double root_discriminant = Math.sqrt((b_val*b_val)-(4*a_val*c_val));
+		double denominator = 2*a_val;
+
+		double pos_result = (-b_val + root_discriminant)/denominator;
+		double neg_result = (-b_val - root_discriminant)/denominator;
+
+		System.out.println("The two roots of the quadratic equation occurs at: x = " + pos_result + " and at x = " + neg_result);
 	}
 }
