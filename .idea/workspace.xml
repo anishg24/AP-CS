@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Crack_The_Combo.java" afterDir="false" />
+    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="More Files">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AP-CS/Lab_1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AP-CS/Lab_1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AP-CS/Lab_2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AP-CS/Lab_2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab_3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab_3.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +42,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,16 +56,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Crack_The_Combo">
+  <component name="RunManager" selected="Application.While_Loop">
     <configuration name="Crack_The_Combo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Crack_The_Combo" />
-      <module name="AP-CS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Lab_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab_1" />
       <module name="AP-CS" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,13 +85,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="While_Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="While_Loop" />
+      <module name="AP-CS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.While_Loop" />
         <item itemvalue="Application.Crack_The_Combo" />
         <item itemvalue="Application.Quadratic_Formula" />
         <item itemvalue="Application.Playground" />
         <item itemvalue="Application.Lab_2" />
-        <item itemvalue="Application.Lab_1" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568660412517</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="More Files">
+      <created>1569436730495</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569436730495</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +152,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished Labs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Labs" />
+    <MESSAGE value="More Files" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Files" />
   </component>
 </project>
