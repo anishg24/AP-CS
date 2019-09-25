@@ -12,26 +12,26 @@ public class Lab_3
 		
 		int of_age = 16;
 		int age = 0;
-		
+
 		Scanner read = new Scanner(System.in);
+
+//		System.out.println("Example 1:");
+//		// Example 1
+//		// The logic of if else statements are simple in nature.
+//
+//		System.out.println("How old are you");
+//		age = read.nextInt();
+//
+//		if (age >= of_age) // checks if the age of the person is 16 or above.
+//		{
+//			System.out.println("You can legally get a permit");
+//		}
+//		else
+//		{
+//			System.out.println("You cannot legally get a permit.");
+//		}
 		
-		System.out.println("Example 1:");
-		// Example 1
-		// The logic of if else statements are simple in nature.
-		
-		System.out.println("How old are you");
-		age = read.nextInt();
-		
-		if (age >= of_age) // checks if the age of the person is 16 or above.
-		{
-			System.out.println("You can legally get a permit");
-		}
-		else
-		{
-			System.out.println("You cannot legally get a permit.");
-		}
-		
-		/*
+
 		System.out.println("Example 2:");
 		// Example 2
 
@@ -42,7 +42,7 @@ public class Lab_3
 		double b = read.nextDouble();
 		System.out.println("c = ");
 		double c = read.nextDouble();
-		
+
 		double discriminant = (b*b)-(4*a*c);
 		if (discriminant > 0)
 		{
@@ -56,9 +56,9 @@ public class Lab_3
 		{
 			System.out.println("The quadratic has no real solution");
 		}
-		*/
-		
-		/*
+
+
+
 		System.out.println("Example 3:");
 		// Example 3:
 		
@@ -77,9 +77,9 @@ public class Lab_3
 		}
 		// Note that you don't have to have a final else statement.
 		
-		*/
+
 		
-		/*
+
 		System.out.println("Example 4:");
 		//Example 4
 		
@@ -106,7 +106,7 @@ public class Lab_3
 			System.out.println("Your grade is an A");
 		}
 		
-		*/
+
 		
 		//Write your own code:
 		/*
