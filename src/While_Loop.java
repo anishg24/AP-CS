@@ -130,10 +130,9 @@ public class While_Loop
 
 	}
 	static void Collatz_Sequence(){
-		Scanner reader = new Scanner(System.in);
 		System.out.print("Starting Number: ");
 
-		int n = reader.nextInt();
+		int n = get_positive();
 		int steps = 1;
 		int highest_num = 0;
 
@@ -163,5 +162,23 @@ public class While_Loop
 		System.out.println("Number of steps = " + (steps-1));
 	}
 
+	static int get_positive(){
+	    Scanner reader = new Scanner(System.in);
+	    int n = 0;
+	    boolean passed = false;
+
+	    while (n <= 0){
+            while (!passed) {
+                try {
+                    n = reader.nextInt();
+                    passed = true;
+                } catch (Exception e) {
+                    System.out.println("Enter an actual number!");
+                    passed = false;
+                }
+            }
+        }
+	    return n;
+    }
 
 }

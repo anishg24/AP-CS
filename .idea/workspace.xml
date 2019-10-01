@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="More Files">
+    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AP-CS/While_Loop.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AP-CS/While_Loop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/While_Loop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/While_Loop.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +58,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.While_Loop">
+  <component name="RunManager" selected="Application.For_Loop">
     <configuration name="Crack_The_Combo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Crack_The_Combo" />
       <module name="AP-CS" />
@@ -64,8 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Lab_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab_2" />
+    <configuration name="For_Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="For_Loop" />
       <module name="AP-CS" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,11 +96,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.For_Loop" />
         <item itemvalue="Application.While_Loop" />
         <item itemvalue="Application.Crack_The_Combo" />
         <item itemvalue="Application.Quadratic_Formula" />
         <item itemvalue="Application.Playground" />
-        <item itemvalue="Application.Lab_2" />
       </list>
     </recent_temporary>
   </component>
@@ -134,7 +136,21 @@
       <option name="project" value="LOCAL" />
       <updated>1569436730495</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="More Files">
+      <created>1569450247339</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569450247339</updated>
+    </task>
+    <task id="LOCAL-00005" summary="More Files">
+      <created>1569450265362</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569450265362</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
