@@ -87,7 +87,9 @@ public class For_Loop
         for (int i = 1; i < num; i ++){
             if (num % i == 0) is_prime = false;
         }
-        if (is_prime) System.out.println(num + " is a prime number.");
+        if (num == 0 || num == 1) System.out.println(num + " is NOT a prime number");
+        else if (num == 2) System.out.println("2 is a prime number");
+        else if (is_prime) System.out.println(num + " is a prime number.");
         else System.out.println(num + " is NOT a prime number.");
 	}
 
@@ -98,6 +100,6 @@ public class For_Loop
 //		Example_2();
 //		Example_3();
 //		Example_4();
-//		Your_Own_Code();
+		Your_Own_Code();
 	}
 }
