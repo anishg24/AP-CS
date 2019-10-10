@@ -98,7 +98,7 @@ public class Arrays
 	}
 
 	static int min(int[] arr){
-		int minimum = 0;
+		int minimum = Integer.MAX_VALUE;
 		for (int i : arr){
 			if (i < minimum) minimum = i;
 		}
@@ -106,7 +106,7 @@ public class Arrays
 	}
 
 	static int max(int[] arr){
-		int maximum = 0;
+		int maximum = Integer.MIN_VALUE;
 		for (int i : arr){
 			if (i > maximum) maximum = i;
 		}
@@ -126,7 +126,7 @@ public class Arrays
 	public static void main(String[] args) 
 	{		
 //		int[] numbers = Example_1();
-//		Example_2();
+		Example_2();
 //		Scanner input = new Scanner(System.in);
 		
 //		System.out.println("Enter any number bigger than 15");
@@ -143,7 +143,7 @@ public class Arrays
 		
 //		Example_4();
 		
-		Your_Own_Code();
+//		Your_Own_Code();
 	}
 	
 }
