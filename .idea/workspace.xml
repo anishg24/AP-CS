@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Classes/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphic/ArrowKeys.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Replace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Arrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Arrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Rock_Paper_Scissors.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Rock_Paper_Scissors.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +42,7 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -44,6 +52,11 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Classes" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -57,7 +70,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Arrays">
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Arrays" />
       <module name="AP-CS" />
@@ -65,23 +78,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Crack_The_Combo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Crack_The_Combo" />
+    <configuration name="ArrowKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Graphic.ArrowKeys" />
       <module name="AP-CS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="For_Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="For_Loop" />
+    <configuration name="Replace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Replace" />
       <module name="AP-CS" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="While_Loop" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="While_Loop" />
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Classes.Runner" />
       <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Classes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -95,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Arrays" />
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="Application.Replace" />
+        <item itemvalue="Application.ArrowKeys" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.For_Loop" />
-        <item itemvalue="Application.While_Loop" />
-        <item itemvalue="Application.Crack_The_Combo" />
+        <item itemvalue="Application.Arrays" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570592337649</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="More Files">
+      <created>1570733265173</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1570733265173</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +227,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Finished Labs" />
     <MESSAGE value="More Files" />
     <option name="LAST_COMMIT_MESSAGE" value="More Files" />
