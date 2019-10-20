@@ -13,17 +13,31 @@ public class Card {
         return suit;
     }
 
-    public void setSuit(CardSuit suit) {
-        this.suit = suit;
-    }
+//    public void setSuit(CardSuit suit) {
+//        this.suit = suit;
+//    }
 
     public CardValue getValue() {
         return value;
     }
 
-    public void setValue(CardValue value) {
-        this.value = value;
-    }
+//    public void setValue(CardValue value) {
+//        this.value = value;
+//    }
+
+//    public void print(){
+//
+//        "┌─────────┐"+
+//        "│{}       │"+
+//        "│         │"+
+//        "│         │"+
+//        "│    {}   │"+
+//        "│         │"+
+//        "│         │"+
+//        "│       {}│"+
+//        "└─────────┘"
+//
+//    }
 
     @Override
     public String toString() {
