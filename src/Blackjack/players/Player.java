@@ -12,6 +12,8 @@ public class Player {
     private int num_won;
 
     public Player(Deck deck){
+        num_won = 0;
+        points = 0;
         this.deck = deck;
         draw();
     }
