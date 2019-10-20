@@ -23,19 +23,16 @@ public class Blackjack_Runner
 		// Initial prints
 		printHands(player, dealer);
 
-		while((playerPoints < 21 && dealer.getPoints() < 21) || (player.isStay() && dealer.isStay())){
-			if (!player.isStay()) {
-				boolean choice = chooseToHit(player);
-				System.out.println("player.isStay() = " + player.isStay());
+		while((!dealer.isStay() && !player.isStay()) && (dealerPoints < 21 || playerPoints < 21)){
+			if (!chooseToHit(player)) {
 				player.hit(dealer.getDeck());
 			}
 
-			if (dealerPoints <= 16) dealer.setStay(false);
-			else dealer.setStay(true);
-
-			if (!dealer.isStay()) {
+			if (dealerPoints <= 16) {
+				dealer.setStay(false);
 				dealer.hit(player.getDeck());
 			}
+			else dealer.setStay(true);
 
 			playerPoints = player.getPoints();
 			dealerPoints = dealer.getPoints();
@@ -43,13 +40,25 @@ public class Blackjack_Runner
 			printHands(player, dealer);
 		}
 
-
-		if(playerPoints > 21 && dealerPoints <= 21){
+		if (playerPoints > 21 && dealerPoints > 21){
+			if (playerPoints > dealerPoints){
+				System.out.println("DEALER WINS!");
+			} else {
+				System.out.println("PLAYER WINS!");
+			}
+		}
+		else if (playerPoints > 21){
 			System.out.println("YOU BUST!");
-		} else if ((dealerPoints > 21 && playerPoints < 21) || playerPoints == 21) {
+		} else if (dealerPoints > 21) {
 			System.out.println("DEALER BUST!");
+		} else if (playerPoints == 21){
+			System.out.println("YOU GOT 21!");
+		} else if (dealerPoints == 21){
+			System.out.println("DEALER GOT 21!");
+		} else if (playerPoints == dealerPoints){
+			System.out.println("DEALER WINS!");
 		} else {
-			System.out.println("NO ONE BUSTED");
+			System.out.println("NO ONE BUSTS!");
 		}
 
 	}
@@ -69,7 +78,7 @@ public class Blackjack_Runner
 
 		player.setStay(result);
 
-		System.out.println("result = " + result);
+//		System.out.println("result = " + result);
 
 		return result;
 	}
