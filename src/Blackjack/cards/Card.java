@@ -25,22 +25,34 @@ public class Card {
 //        this.value = value;
 //    }
 
-//    public void print(){
-//
-//        "┌─────────┐"+
-//        "│{}       │"+
-//        "│         │"+
-//        "│         │"+
-//        "│    {}   │"+
-//        "│         │"+
-//        "│         │"+
-//        "│       {}│"+
-//        "└─────────┘"
-//
-//    }
+    public void print(){
+        String A = "A ";
+        System.out.println("┌─────────┐");
+        System.out.println("│"+A+"        │");
+        System.out.println("│         │");
+        System.out.println("│         │");
+        System.out.println("│    {}   │");
+        System.out.println("│         │");
+        System.out.println("│         │");
+        System.out.println("│       {}│");
+        System.out.println("└─────────┘");
+    }
 
     @Override
     public String toString() {
-        return (this.value + " " + this.suit);
+//        String A = "A ";
+//        return(
+//
+//                        "┌─────────┐\n"+
+//                        "│"+A+"       │\n"+
+//                        "│         │\n"+
+//                        "│         │\n"+
+//                        "│    {}   │\n"+
+//                        "│         │\n"+
+//                        "│         │\n"+
+//                        "│       {}│\n"+
+//                        "└─────────┘\n"
+//        );
+        return (value + " OF " + suit);
     }
 }

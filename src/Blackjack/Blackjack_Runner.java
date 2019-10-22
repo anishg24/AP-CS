@@ -12,6 +12,8 @@ public class Blackjack_Runner
 	{
 		// Setup the game
 		// Create a deck, the player classes
+		Scanner input = new Scanner(System.in);
+		boolean continuePlay = true;
 		Deck deck = new Deck();
 		Player player = new Player(deck);
 		Player dealer = new Player(player.getDeck());
@@ -23,10 +25,20 @@ public class Blackjack_Runner
 		// Initial prints
 		printHands(player, dealer);
 
-		while((!dealer.isStay() && !player.isStay()) && (dealerPoints < 21 || playerPoints < 21)){
-			if (!chooseToHit(player)) {
-				player.hit(dealer.getDeck());
+		boolean condition1 = (dealerPoints < 21 && playerPoints < 21);
+		boolean condition2 = (!player.isStay() && !dealer.isStay());
+		boolean condition3;
+
+		while((dealerPoints < 21 && playerPoints < 21) && (!player.isStay() || !dealer.isStay())){
+
+			if (!player.isStay()) {
+				System.out.println("Want to hit? (yes/no)");
+				continuePlay = input.next().compareToIgnoreCase("yes") == 0;
 			}
+
+			if(continuePlay){
+				player.hit(dealer.getDeck());
+			} else player.setStay(true);
 
 			if (dealerPoints <= 16) {
 				dealer.setStay(false);
@@ -38,26 +50,29 @@ public class Blackjack_Runner
 			dealerPoints = dealer.getPoints();
 
 			printHands(player, dealer);
+			System.out.println();
 		}
 
-		if (playerPoints > 21 && dealerPoints > 21){
+
+		// Logic Handling, determine who wins the game
+
+		if (playerPoints > 21 && dealerPoints > 21){    // player and dealer are both out of bounds: higher points is loser
 			if (playerPoints > dealerPoints){
 				System.out.println("DEALER WINS!");
 			} else {
 				System.out.println("PLAYER WINS!");
 			}
-		}
-		else if (playerPoints > 21){
+		} else if (playerPoints > 21){					// player has more than 21: automatic loss
 			System.out.println("YOU BUST!");
-		} else if (dealerPoints > 21) {
+		} else if (dealerPoints > 21) {					// dealer has more than 21: automatic win
 			System.out.println("DEALER BUST!");
-		} else if (playerPoints == 21){
+		} else if (playerPoints == 21){					// player hits 21: immediate win
 			System.out.println("YOU GOT 21!");
-		} else if (dealerPoints == 21){
+		} else if (dealerPoints == 21){					// dealer hits 21: immediate loss
 			System.out.println("DEALER GOT 21!");
-		} else if (playerPoints == dealerPoints){
+		} else if (playerPoints == dealerPoints){		// a tie: dealer wins
 			System.out.println("DEALER WINS!");
-		} else {
+		} else {										// no one busts
 			System.out.println("NO ONE BUSTS!");
 		}
 
@@ -65,7 +80,9 @@ public class Blackjack_Runner
 
 	public static void printHands(Player player, Player dealer){
 		System.out.println("PLAYER: " + player.getHand() + " = " + player.getPoints());
+//		System.out.println("\tPLAYER STAYING? " + player.isStay());
 		System.out.println("DEALER: " + dealer.getHand() + " = " + dealer.getPoints());
+//		System.out.println("\tDEALER STAYING? " + dealer.isStay());
 	}
 
 	public static boolean chooseToHit(Player player){

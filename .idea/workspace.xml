@@ -4,6 +4,8 @@
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +68,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Blackjack_Runner">
+  <component name="RunManager" selected="Java Scratch.Scratch">
     <configuration name="ArrowKeys" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Graphic.ArrowKeys" />
       <module name="AP-CS" />
@@ -116,11 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.Blackjack_Runner" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Application.Replace" />
         <item itemvalue="Application.ArrowKeys" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
