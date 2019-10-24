@@ -34,6 +34,6 @@ public class Kiosk {
         saving.withdraw("we", checking.getBalance());
         saving.withdraw("The proletariat will rise again!", checking.getBalance());
 
-        System.exit(69);
+//        System.exit(69);
     }
 }

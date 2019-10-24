@@ -21,7 +21,19 @@ public class BankAccount {
     }
 
     private boolean check_all(String pw){
-        return (check_PW(pw) && attempts < 3);
+        boolean result = false;
+
+        if (!check_PW(pw)){
+            result = false;
+        } else {
+            result = true;
+        }
+
+        if (attempts > 3){
+            System.exit(69);
+        }
+
+        return result;
     }
 
     public int getAttempts() {
