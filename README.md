@@ -7,6 +7,8 @@ If you are one of my classmates, please don't just copy and paste, programming i
 
 (Also I'm putting your name on this README)
 
-# Wall of Shame
-===============
+# Wall of Classmates who use this.
 * \*\*\*\*\* Sonami
+* \*\*\*\*\* Rameshbabu
+* \*\*\*\*\* Su
+* \*\*\*\*\* Tyagi
