@@ -26,15 +26,23 @@ public class Card {
 //    }
 
     public void print(){
-        String A = "A ";
+        String pVal;
+        if (value == CardValue.JACK) pVal = "J ";
+        else if (value == CardValue.QUEEN) pVal = "Q ";
+        else if (value == CardValue.KING) pVal = "K ";
+        else if (value == CardValue.ACE) pVal = "A ";
+        else if (value == CardValue.TEN) pVal = ""+value.getPoints();
+        else pVal = value.getPoints()+" ";
+//        pVal = "A";
+        String symbol = suit.getSymbol()+" ";
         System.out.println("┌─────────┐");
-        System.out.println("│"+A+"        │");
+        System.out.println("│"+pVal+"       │");
         System.out.println("│         │");
         System.out.println("│         │");
-        System.out.println("│    {}   │");
+        System.out.println("│    "+symbol+"   │");
         System.out.println("│         │");
         System.out.println("│         │");
-        System.out.println("│       {}│");
+        System.out.println("│       "+pVal+"│");
         System.out.println("└─────────┘");
     }
 
@@ -53,6 +61,6 @@ public class Card {
 //                        "│       {}│\n"+
 //                        "└─────────┘\n"
 //        );
-        return (value + " OF " + suit);
+        return (value + " OF " + suit.getSymbol());
     }
 }

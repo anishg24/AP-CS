@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="" />
+    <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/players/Test.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/players/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/InputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/Prompt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerRangeInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerSetInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/menu/MenuInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleRangeInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleSetInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/PasswordInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringInputScanner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringSetInputScanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Blackjack/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/players/Player.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,9 +64,13 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blackjack/scanner" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Blackjack.cards" />
       <recent name="Classes" />
@@ -63,8 +88,34 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Kiosk">
+  <component name="RunManager" selected="Application.Blackjack_Runner (1)">
+    <configuration name="Blackjack_Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
+      <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Blackjack.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Blackjack_Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Blackjack.scanner.Blackjack_Runner" />
+      <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Blackjack.scanner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Blackjack_Runner" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
       <module name="AP-CS" />
       <extension name="coverage">
@@ -90,13 +141,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Replace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Replace" />
-      <module name="AP-CS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Classes.Runner" />
       <module name="AP-CS" />
@@ -117,13 +161,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Blackjack_Runner" />
+      <item itemvalue="Application.Kiosk" />
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="Application.Blackjack_Runner (1)" />
+      <item itemvalue="Java Scratch.Scratch" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Blackjack_Runner (1)" />
+        <item itemvalue="Application.Blackjack_Runner" />
+        <item itemvalue="Application.Blackjack_Runner" />
         <item itemvalue="Application.Kiosk" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.Blackjack_Runner" />
-        <item itemvalue="Application.Runner" />
-        <item itemvalue="Application.Replace" />
       </list>
     </recent_temporary>
   </component>
@@ -250,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571858527261</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="More Files">
+      <created>1571942498670</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1571942498670</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

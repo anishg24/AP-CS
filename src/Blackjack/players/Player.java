@@ -11,11 +11,15 @@ public class Player {
     private int num_won;
     private int points;
     private boolean stay;
+    private String name;
+    private double balance;
 
-    public Player(Deck deck){
+    public Player(String name, Deck deck){
+        this.name = name;
         num_won = 0;
         points = 0;
         stay = false;
+
         this.deck = deck;
         draw();
         calculate_points();
@@ -70,5 +74,13 @@ public class Player {
 
     public void setStay(boolean stay) {
         this.stay = stay;
+    }
+
+    public void setDeck(Deck deck) {
+        this.deck = deck;
+    }
+
+    public String getName() {
+        return name;
     }
 }

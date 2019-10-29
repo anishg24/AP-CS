@@ -2,125 +2,152 @@ package Blackjack;
 
 import Blackjack.cards.*;
 import Blackjack.players.*;
+import Blackjack.scanner.*;
+import Blackjack.scanner.scanners.menu.*;
 
 import java.util.List;
 import java.util.Scanner;
 
 public class Blackjack_Runner
 {
-	public static void run()	// Runs the game
-	{
-		// Setup the game
-		// Create a deck, the player classes
-		Scanner input = new Scanner(System.in);
-		boolean continuePlay = true;
-		Deck deck = new Deck();
-		Player player = new Player(deck);
-		Player dealer = new Player(player.getDeck());
+    public static void run()	// Runs the game
+    {
+        // Setup the game
+        // Create a deck, the player classes
+        Scanner input = new Scanner(System.in);
+        boolean continuePlay = true;
+        Deck deck = new Deck();
+        Player dealer = new Player("DEALER",deck);              // THIS ORDERING OF INITIALIZATION AND DECLARATION IS IMPORTANT
+        Player player = new Player("PLAYER",dealer.getDeck());
 
-		// Less typing later on
-		int playerPoints = player.getPoints();
-		int dealerPoints = dealer.getPoints();
+        // Less typing later on
+        int playerPoints = player.getPoints();
+        int dealerPoints = dealer.getPoints();
 
-		// Initial prints
-		printHands(player, dealer);
+        // Initial prints
+        printInitialHands(player, dealer);
 
-		boolean condition1 = (dealerPoints < 21 && playerPoints < 21);
-		boolean condition2 = (!player.isStay() && !dealer.isStay());
-		boolean condition3;
+        while((dealerPoints < 21 && playerPoints < 21) && !player.isStay()){
 
-		while((dealerPoints < 21 && playerPoints < 21) && (!player.isStay() || !dealer.isStay())){
+//            if (!player.isStay()) {
+//                System.out.println("Want to hit? (yes/no)");
+//                continuePlay = input.next().compareToIgnoreCase("yes") == 0;
+//            }
+//
+//            if(continuePlay){
+//                player.hit(dealer.getDeck());
+//            } else player.setStay(true);
+//
+//            if (dealerPoints <= 16) {
+//                dealer.setStay(false);
+//                dealer.hit(player.getDeck());
+//            }
+//            else dealer.setStay(true);
+         if (!player.isStay()) {
+             if (chooseToHit()) {
+                 player.hit(player.getDeck());
+                 printHand(player);
+             } else {
+                 player.setStay(true);
+             }
+         }
 
-			if (!player.isStay()) {
-				System.out.println("Want to hit? (yes/no)");
-				continuePlay = input.next().compareToIgnoreCase("yes") == 0;
-			}
+            playerPoints = player.getPoints();
+            dealerPoints = dealer.getPoints();
 
-			if(continuePlay){
-				player.hit(dealer.getDeck());
-			} else player.setStay(true);
+//            printHand(player);
+        }
 
-			if (dealerPoints <= 16) {
-				dealer.setStay(false);
-				dealer.hit(player.getDeck());
-			}
-			else dealer.setStay(true);
+        System.out.println();
+        dealer.setDeck(player.getDeck());
+        printHands(player, dealer);
 
-			playerPoints = player.getPoints();
-			dealerPoints = dealer.getPoints();
+        while (dealerPoints <= 16) {
+            dealer.hit(dealer.getDeck());
+            dealerPoints = dealer.getPoints();
+            printHand(dealer);
+        }
 
-			printHands(player, dealer);
-			System.out.println();
-		}
+        // Logic Handling, determine who wins the game
+
+        if (playerPoints > 21 && dealerPoints > 21){    // player and dealer are both out of bounds: higher points is loser
+            if (playerPoints > dealerPoints){
+                System.out.println("DEALER WINS!");
+            } else {
+                System.out.println("PLAYER WINS!");
+            }
+        } else if (playerPoints > 21){					// player has more than 21: automatic loss
+            System.out.println("YOU BUST!");
+        } else if (dealerPoints > 21) {					// dealer has more than 21: automatic win
+            System.out.println("DEALER BUST!");
+        } else if (playerPoints == 21){					// player hits 21: immediate win
+            System.out.println("YOU GOT 21!");
+        } else if (dealerPoints == 21){					// dealer hits 21: immediate loss
+            System.out.println("DEALER GOT 21!");
+        } else if (playerPoints == dealerPoints || 21 - playerPoints > 21 - dealerPoints ){		// yeeet
+            System.out.println("DEALER WINS!");
+        } else if (21 - playerPoints < 21 - dealerPoints) {										// idk
+            System.out.println("PLAYER WINS!");
+        }
+
+    }
+
+    public static void printInitialHands(Player player, Player dealer){
+        printHand(player);
+        System.out.println(dealer.getName() + ": [" + dealer.getHand().get(0) +", " + " ??? OF ???]" + " = ???");
+    }
+
+    public static void printHands(Player player, Player dealer){
+        printHand(player);
+        printHand(dealer);
+    }
+
+    public static void printHand(Player person){
+        System.out.println(person.getName() + ": " + person.getHand() + " = " + person.getPoints());
+    }
 
 
-		// Logic Handling, determine who wins the game
+    public static boolean chooseToHit(){
+        boolean result = false;
+        // Define some options for the menu
+        String[] options = {"Hit", "Stand"};
 
-		if (playerPoints > 21 && dealerPoints > 21){    // player and dealer are both out of bounds: higher points is loser
-			if (playerPoints > dealerPoints){
-				System.out.println("DEALER WINS!");
-			} else {
-				System.out.println("PLAYER WINS!");
-			}
-		} else if (playerPoints > 21){					// player has more than 21: automatic loss
-			System.out.println("YOU BUST!");
-		} else if (dealerPoints > 21) {					// dealer has more than 21: automatic win
-			System.out.println("DEALER BUST!");
-		} else if (playerPoints == 21){					// player hits 21: immediate win
-			System.out.println("YOU GOT 21!");
-		} else if (dealerPoints == 21){					// dealer hits 21: immediate loss
-			System.out.println("DEALER GOT 21!");
-		} else if (playerPoints == dealerPoints){		// a tie: dealer wins
-			System.out.println("DEALER WINS!");
-		} else {										// no one busts
-			System.out.println("NO ONE BUSTS!");
-		}
+        // Create a new prompt attached to standard input/output
+        Prompt prompt = new Prompt(System.in, System.out);
 
-	}
+        // Instantiate a menu scanner
+        MenuInputScanner scanner = new MenuInputScanner(options);
 
-	public static void printHands(Player player, Player dealer){
-		System.out.println("PLAYER: " + player.getHand() + " = " + player.getPoints());
-//		System.out.println("\tPLAYER STAYING? " + player.isStay());
-		System.out.println("DEALER: " + dealer.getHand() + " = " + dealer.getPoints());
-//		System.out.println("\tDEALER STAYING? " + dealer.isStay());
-	}
+        // Setup the menu prompt message
+        scanner.setMessage("Are you going to hit or stand? ");
 
-	public static boolean chooseToHit(Player player){
+        // Grab the user in a loop until a valid input is inserted
+//        int userInput = prompt.getUserInput(scanner);
+
+        if (prompt.getUserInput(scanner) == 1) result = true;
+
+        return result;
+    }
+
+    public static void main(String[] args)
+    {
+		System.out.println("Welcome to Mr. Lee's Blackjack Casino!");
+		System.out.println("Would you like to play Blackjack against me?");
+
 		Scanner read = new Scanner(System.in);
-		System.out.println("Would you like to hit? ");
-		boolean result;
 
-		if (read.next().compareToIgnoreCase("yes") == 0) result = false;
-		else result = true;
+		String run = read.next();		// Reads next input as a String
 
-		player.setStay(result);
 
-//		System.out.println("result = " + result);
+		if (run.compareToIgnoreCase("yes") == 0)		// checks to see if the the user's input is yes or YES or YeS or yES
+		{
+			run();
+		} else {
+            System.out.println("Why did you even run me then?");
+            System.exit(69696969);
+        }
 
-		return result;
-	}
-	
-	public static void main(String[] args)
-	{
-//		System.out.println("Welcome to Mr. Lee's Blackjack Casino!");
-//		System.out.println("Would you like to play Blackjack against me?");
-//
-//		Scanner read = new Scanner(System.in);
-//
-//		String run = read.next();		// Reads next input as a String
-//		boolean game_on = false;
-//
-//
-//		if (run.compareToIgnoreCase("yes") == 0)		// checks to see if the the user's input is yes or YES or YeS or yES
-//		{
-//			game_on = true;
-//			run();
-//		}
 
-		run();
-		
-		
-
-	}
+    }
 
 }
