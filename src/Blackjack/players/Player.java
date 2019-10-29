@@ -12,7 +12,7 @@ public class Player {
     private int points;
     private boolean stay;
     private String name;
-    private double balance;
+    private int balance;
 
     public Player(String name, Deck deck){
         this.name = name;

@@ -2,25 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/players/Test.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/players/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/InputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/Prompt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerRangeInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/integer/IntegerSetInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/menu/MenuInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleRangeInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleSetInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/PasswordInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringInputScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringSetInputScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphic/Test.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Graphic/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blackjack/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/players/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
