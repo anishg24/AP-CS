@@ -43,10 +43,6 @@ public class StringInputScanner implements InputScanner<String> {
             return false;
         }
 
-        if (input.next().isEmpty()) {
-            return false;
-        }
-
-        return true;
+        return !input.next().isEmpty();
     }
 }

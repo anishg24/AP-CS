@@ -4,7 +4,6 @@ import java.io.PrintStream;
 import java.util.Scanner;
 
 /**
- *
  * @param <T>
  */
 public interface InputScanner<T> {

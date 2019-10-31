@@ -22,7 +22,7 @@ public class DoubleSetInputScanner extends DoubleInputScanner {
     @Override
     public boolean hasValidInput(Scanner input) {
 
-        if(!super.hasValidInput(input)){
+        if (!super.hasValidInput(input)) {
             return false;
         }
 

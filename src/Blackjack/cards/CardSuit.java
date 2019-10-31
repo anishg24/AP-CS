@@ -5,7 +5,7 @@ public enum CardSuit {
 
     private String symbol;
 
-    CardSuit(String symbol){
+    CardSuit(String symbol) {
         this.symbol = symbol;
     }
 

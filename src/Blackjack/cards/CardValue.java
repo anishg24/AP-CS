@@ -15,8 +15,8 @@ public enum CardValue {
     public int getPoints() {
         int chance;
 
-        if (points == 0){
-            chance = (int)(2*Math.random());
+        if (points == 0) {
+            chance = (int) (2 * Math.random());
 
             if (chance == 0) points = 1;
             else points = 11;

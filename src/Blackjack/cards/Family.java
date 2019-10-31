@@ -19,7 +19,7 @@ public class Family {
         return cards;
     }
 
-    public Card getRandomCard(){
+    public Card getRandomCard() {
         int index = new Random().nextInt(cards.size());
         return cards.get(index);
     }

@@ -15,7 +15,7 @@ public class Prompt {
         this.output = output;
     }
 
-    public<T> T getUserInput(InputScanner<T> scanner) {
+    public <T> T getUserInput(InputScanner<T> scanner) {
 
         scanner.show(output);
         while (!scanner.hasValidInput(input)) {
