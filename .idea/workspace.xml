@@ -5,17 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/anishg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/maven.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack_Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/CardSuit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/CardValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Deck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Family.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Calculator/Calculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Calculator/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Calculator/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardValue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Family.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Family.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Blackjack/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/players/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/scanner/InputScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/scanner/InputScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/scanner/Prompt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/scanner/Prompt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleSetInputScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/precisiondouble/DoubleSetInputScanner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringInputScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/scanner/scanners/string/StringInputScanner.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +39,27 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AP CS" />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -55,15 +76,31 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Blackjack_GUI" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="Calculator" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Blackjack/scanner" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blackjack_GUI" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Classes2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Blackjack.cards" />
@@ -82,7 +119,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Blackjack_Runner (1)">
+  <component name="RunManager" selected="Application.Runner (1)">
+    <configuration name="Blackjack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Blackjack_GUI.Blackjack" />
+      <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Blackjack_GUI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Blackjack_Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
       <module name="AP-CS" />
@@ -122,25 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Kiosk" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Bank_Account_Lab.Kiosk" />
+    <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Calculator.Runner" />
       <module name="AP-CS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Bank_Account_Lab.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Classes.Runner" />
-      <module name="AP-CS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Classes.*" />
+          <option name="PATTERN" value="Calculator.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -157,18 +194,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Blackjack_Runner" />
-      <item itemvalue="Application.Kiosk" />
-      <item itemvalue="Application.Runner" />
       <item itemvalue="Application.Blackjack_Runner (1)" />
+      <item itemvalue="Application.Blackjack" />
       <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Application.Runner (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner (1)" />
         <item itemvalue="Application.Blackjack_Runner (1)" />
-        <item itemvalue="Application.Blackjack_Runner" />
-        <item itemvalue="Application.Blackjack_Runner" />
-        <item itemvalue="Application.Kiosk" />
         <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.Blackjack" />
+        <item itemvalue="Application.Blackjack_Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -302,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571942498670</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="More Files">
+      <created>1572547883467</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572547883467</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

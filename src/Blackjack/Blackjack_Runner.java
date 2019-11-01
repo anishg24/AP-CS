@@ -6,7 +6,6 @@ import Blackjack.scanner.*;
 import Blackjack.scanner.scanners.menu.*;
 import Blackjack.scanner.scanners.precisiondouble.DoubleInputScanner;
 
-import java.sql.SQLOutput;
 import java.util.List;
 import java.util.Scanner;
 
@@ -103,7 +102,8 @@ public class Blackjack_Runner {
 
     public static void printInitialHands(Player player, Player dealer) {
         printHand(player);
-        System.out.println(dealer.getName() + ": [" + dealer.getHand().get(0) + ", " + " ??? OF ???]" + " = ???");
+        System.out.println(dealer.getName().toUpperCase() + ": (??)");
+        dealer.printHiddenHand();
     }
 
     public static void printHands(Player player, Player dealer) {
@@ -112,7 +112,8 @@ public class Blackjack_Runner {
     }
 
     public static void printHand(Player person) {
-        System.out.println(person.getName() + ": " + person.getHand() + " = " + person.getPoints());
+        System.out.println(person.getName().toUpperCase() + ": (" + person.getPoints()+")");
+        person.printHand();
     }
 
     public static void handleWin(Player person, boolean got_21) {
@@ -168,15 +169,20 @@ public class Blackjack_Runner {
             Player[] array = run(player,dealer);
             player = array[0];
             dealer = array[1];
+            if (player.getBalance() < 0 || dealer.getBalance() < 0) {
+                System.out.println("You don't have any more money!");
+                System.exit(6969);
+            }
             System.out.println("Would you like to play again? (yes/no)");
             while(read.next().compareToIgnoreCase("yes") == 0){
+                player.replay();
+                dealer.replay();
                 run(player,dealer);
             }
         } else {
             System.out.println("Why did you even run me then?");
             System.exit(69);
         }
-
     }
 
 }

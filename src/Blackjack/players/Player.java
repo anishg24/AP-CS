@@ -35,6 +35,13 @@ public class Player {
         }
     }
 
+    public void replay(){
+        hand.clear();
+        stay = false;
+        draw();
+        calculate_points();
+    }
+
     private void draw() {
         for (int i = 0; i < 2; i++) {
             Card card = deck.getRandomCard();
@@ -112,4 +119,130 @@ public class Player {
         if (balance > userInput) balance -= userInput;
         return userInput;
     }
+
+    private String[] getCardValues(){
+        String[] result = new String[hand.size()];
+        for(int i = 0; i < hand.size(); i++){
+            CardValue value = hand.get(i).getValue();
+
+            if (value == CardValue.JACK) result[i] = "J ";
+            else if (value == CardValue.QUEEN) result[i] = "Q ";
+            else if (value == CardValue.KING) result[i] = "K ";
+            else if (value == CardValue.ACE) result[i] = "A ";
+            else if (value == CardValue.TEN) result[i] = "" + value.getPoints();
+            else result[i] = value.getPoints() + " ";
+        }
+        return result;
+    }
+
+    private String[] getCardSuits(){
+        String[] result = new String[hand.size()];
+        for (int i = 0; i < hand.size() ; i++){
+            CardSuit symbol = hand.get(i).getSuit();
+            result[i] = symbol.getSymbol() + " ";
+        }
+        return result;
+    }
+
+    public void printHand(){
+        String[] values = getCardValues();
+        String[] suits = getCardSuits();
+
+            String top_card = "┌─────────┐";
+//            String top_value = "│" + pVal + "       │";
+            String card_body = "│         │";
+//            String symbol_card = "│    " + symbol + "   │";
+//            String bottom_value = "│       " + pVal + "│";
+            String bottom_card = "└─────────┘";
+
+        // Card top
+        for (int i = 0; i < hand.size(); i++) System.out.print(top_card);
+        System.out.println();
+
+        // Heading value
+        for (int i = 0; i < hand.size(); i++){
+            String pVal = values[i];
+            String top_value = "│" + pVal + "       │";
+            System.out.print(top_value);
+        }
+        System.out.println();
+
+        // Card body
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < hand.size(); j++) {
+                System.out.print(card_body);
+            }
+            System.out.println();
+        }
+
+        // Symbol
+        for (int i = 0; i < hand.size(); i++){
+            String symbol = suits[i];
+            String symbol_card = "│    " + symbol + "   │";
+            System.out.print(symbol_card);
+        }
+        System.out.println();
+
+        // Card body
+        for (int i = 0; i < 2; i++) {
+            for (int j = 0; j < hand.size(); j++) {
+                System.out.print(card_body);
+            }
+            System.out.println();
+        }
+
+        // Bottom value
+        for (int i = 0; i < hand.size(); i++){
+            String pVal = values[i];
+            String bottom_value = "│       " + pVal + "│";
+            System.out.print(bottom_value);
+        }
+        System.out.println();
+
+        // Bottom card
+        for(int i = 0; i < hand.size(); i++) System.out.print(bottom_card);
+        System.out.println();
+
+
+//            System.out.println("┌─────────┐");
+//            System.out.println("│" + pVal + "       │");
+//            System.out.println("│         │");
+//            System.out.println("│         │");
+//            System.out.println("│    " + symbol + "   │");
+//            System.out.println("│         │");
+//            System.out.println("│         │");
+//            System.out.println("│       " + pVal + "│");
+//            System.out.println("└─────────┘");
+
+    }
+
+    public void printHiddenHand(){
+        String[] values = getCardValues();
+        String[] suits = getCardSuits();
+
+        String pVal = values[0];
+        String symbol = suits[0];
+
+        String top_card = "┌─────────┐";
+        String top_value = "│" + pVal + "       │";
+        String card_body = "│         │";
+        String symbol_card = "│    " + symbol + "   │";
+        String bottom_value = "│       " + pVal + "│";
+        String bottom_card = "└─────────┘";
+
+        String hidden_value_top = "│ ??      │";
+        String hidden_symbol = "│    ?    │";
+        String hidden_value_bot = "│      ?? │";
+
+        System.out.println(top_card + top_card);
+        System.out.println(top_value + hidden_value_top);
+        System.out.println(card_body + card_body);
+        System.out.println(card_body + card_body);
+        System.out.println(symbol_card + hidden_symbol);
+        System.out.println(card_body + card_body);
+        System.out.println(card_body + card_body);
+        System.out.println(bottom_value + hidden_value_bot);
+        System.out.println(bottom_card + bottom_card);
+    }
+
 }

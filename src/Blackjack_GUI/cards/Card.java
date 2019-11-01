@@ -1,4 +1,4 @@
-package Blackjack.cards;
+package Blackjack_GUI.cards;
 
 public class Card {
     CardSuit suit;
@@ -33,6 +33,7 @@ public class Card {
         else if (value == CardValue.ACE) pVal = "A ";
         else if (value == CardValue.TEN) pVal = "" + value.getPoints();
         else pVal = value.getPoints() + " ";
+//        pVal = "A";
         String symbol = suit.getSymbol() + " ";
         System.out.println("┌─────────┐");
         System.out.println("│" + pVal + "       │");
