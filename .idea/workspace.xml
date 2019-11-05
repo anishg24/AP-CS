@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/anishg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/maven.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/maven/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/Blackjack_Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/CardSuit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/CardValue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Deck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Blackjack_GUI/cards/Family.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Calculator/Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StringSplitter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/Blackjack_Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/players/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/players/Player.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -76,6 +57,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
@@ -119,39 +101,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Runner (1)">
-    <configuration name="Blackjack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Blackjack_GUI.Blackjack" />
-      <module name="AP-CS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Blackjack_GUI.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.StringSplitter">
     <configuration name="Blackjack_Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
       <module name="AP-CS" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Blackjack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Blackjack_Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Blackjack.scanner.Blackjack_Runner" />
-      <module name="AP-CS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Blackjack.scanner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,6 +141,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StringSplitter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="StringSplitter" />
+      <module name="AP-CS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Scratch" />
       <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
@@ -193,19 +163,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Blackjack_Runner" />
       <item itemvalue="Application.Blackjack_Runner (1)" />
-      <item itemvalue="Application.Blackjack" />
-      <item itemvalue="Java Scratch.Scratch" />
       <item itemvalue="Application.Runner (1)" />
+      <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="Application.StringSplitter" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StringSplitter" />
+        <item itemvalue="Java Scratch.Scratch (1)" />
         <item itemvalue="Application.Runner (1)" />
         <item itemvalue="Application.Blackjack_Runner (1)" />
         <item itemvalue="Java Scratch.Scratch" />
-        <item itemvalue="Application.Blackjack" />
-        <item itemvalue="Application.Blackjack_Runner" />
       </list>
     </recent_temporary>
   </component>
@@ -346,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572547883467</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Finished some work. Squashed some bugs. The usual.">
+      <created>1572640944551</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572640944551</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -366,6 +343,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Finished Labs" />
     <MESSAGE value="More Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="More Files" />
+    <MESSAGE value="Finished some work. Squashed some bugs. The usual." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished some work. Squashed some bugs. The usual." />
   </component>
 </project>
