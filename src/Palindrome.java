@@ -3,22 +3,22 @@ import java.util.Scanner;
 
 public class Palindrome {
     public static void main(String[] args) {
-//        Scanner input = new Scanner(System.in);
-//        String string;
-//        String string3 = "";
-//
-//        System.out.print("Enter your word: ");
-//        string = input.next();
-//        while(!checkPalindrome(string)){
-//            System.out.println("That is not a palindrome word. Try again.");
-//            string = input.next();
-//        }
-//        System.out.println("That is a palindrome word.");
-//
-//        for(int i = 0; i < 3; i++){
-//            string3 = string3.concat(string);
-//        }
-//        System.out.println("Your new word, " + string3 + ", is also a palindrome.");
+        Scanner input = new Scanner(System.in);
+        String string;
+        String string3 = "";
+
+        System.out.print("Enter your word: ");
+        string = input.next();
+        while(!checkPalindrome(string)){
+            System.out.println("That is not a palindrome word. Try again.");
+            string = input.next();
+        }
+        System.out.println("That is a palindrome word.");
+
+        for(int i = 0; i < 3; i++){
+            string3 = string3.concat(string);
+        }
+        System.out.println("Your new word, " + string3 + ", is also a palindrome.");
 
         System.out.println(Arrays.toString(checkPalindrome("madam madam madam", 5)));
 
