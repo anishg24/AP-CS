@@ -25,12 +25,13 @@ public class Palindrome {
     }
 
     public static String reverse(String string){
-        char[] c_arr = string.toCharArray();
-        char[] rev_arr = new char[c_arr.length];
-        for (int i = rev_arr.length-1; i >= 0 ; i--){
-            rev_arr[(c_arr.length-1) - i] = c_arr[i];
-        }
-        return new String(rev_arr);
+//        char[] c_arr = string.toCharArray();
+//        char[] rev_arr = new char[c_arr.length];
+//        for (int i = rev_arr.length-1; i >= 0 ; i--){
+//            rev_arr[(c_arr.length-1) - i] = c_arr[i];
+//        }
+//        return new String(rev_arr);
+        return new StringBuilder(string).reverse().toString();
     }
 
     public static boolean checkPalindrome(String string){
