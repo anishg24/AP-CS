@@ -11,24 +11,24 @@ public class StringSplitter {
 
     public static String[] split(String word){
         String[] result = new String[get_spaces(word) + 1];
-        char[] str_a = word.toCharArray();
-        String concat_this = "";
-        for(int i = 0 ; i < str_a.length; i ++){
-            if (str_a[i] != ' ' && i != str_a.length-1){
-                concat_this = concat_this.concat(str_a[i]+"");
-            } else if (i == str_a.length-1 && str_a[i] != ' '){
-                concat_this = concat_this.concat(str_a[i]+"");
+        char[] carr = word.toCharArray();
+        String resultStr = "";
+        for(int i = 0 ; i < carr.length; i ++){
+            if (carr[i] != ' ' && i != carr.length-1){
+                resultStr = resultStr.concat(carr[i]+"");
+            } else if (i == carr.length-1 && carr[i] != ' '){
+                resultStr = resultStr.concat(carr[i]+"");
                 for (int j = 0; j < result.length; j ++) if (result[j] == null) {
-                    result[j] = concat_this;
+                    result[j] = resultStr;
                     break;
                 }
             }
             else {
                 for (int j = 0; j < result.length; j ++) if (result[j] == null) {
-                    result[j] = concat_this;
+                    result[j] = resultStr;
                     break;
                 }
-                concat_this = "";
+                resultStr = "";
             }
         }
         return result;

@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/StringSplitter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/CharWarmup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Palindrome.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StringSplitter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringSplitter.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,29 +103,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.StringSplitter">
-    <configuration name="Blackjack_Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
+  <component name="RunManager" selected="Application.Palindrome">
+    <configuration name="CharWarmup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CharWarmup" />
       <module name="AP-CS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Blackjack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Blackjack_Runner" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Blackjack.Blackjack_Runner" />
+    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Palindrome" />
       <module name="AP-CS" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Blackjack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,27 +145,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.Blackjack_Runner (1)" />
       <item itemvalue="Application.Runner (1)" />
-      <item itemvalue="Java Scratch.Scratch" />
-      <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Application.StringSplitter" />
+      <item itemvalue="Application.CharWarmup" />
+      <item itemvalue="Java Scratch.Scratch (1)" />
+      <item itemvalue="Application.Palindrome" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Palindrome" />
+        <item itemvalue="Application.CharWarmup" />
+        <item itemvalue="Application.Runner (1)" />
         <item itemvalue="Application.StringSplitter" />
         <item itemvalue="Java Scratch.Scratch (1)" />
-        <item itemvalue="Application.Runner (1)" />
-        <item itemvalue="Application.Blackjack_Runner (1)" />
-        <item itemvalue="Java Scratch.Scratch" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572640944551</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Finished some work. Squashed some bugs. The usual.">
+      <created>1572982435992</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572982435992</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
