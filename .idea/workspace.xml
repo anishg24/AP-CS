@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Object_Arrays/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Palindrome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Palindrome.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,10 +102,23 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Palindrome">
+  <component name="RunManager" selected="Application.Classroom">
     <configuration name="CharWarmup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="CharWarmup" />
       <module name="AP-CS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Classroom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Object_Arrays.Classroom" />
+      <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Object_Arrays.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,27 +150,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scratch (1)" type="Java Scratch" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Scratch" />
-      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Runner (1)" />
       <item itemvalue="Application.StringSplitter" />
       <item itemvalue="Application.CharWarmup" />
-      <item itemvalue="Java Scratch.Scratch (1)" />
       <item itemvalue="Application.Palindrome" />
+      <item itemvalue="Application.Classroom" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Classroom" />
         <item itemvalue="Application.Palindrome" />
         <item itemvalue="Application.CharWarmup" />
         <item itemvalue="Application.Runner (1)" />
         <item itemvalue="Application.StringSplitter" />
-        <item itemvalue="Java Scratch.Scratch (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573677323720</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Finished some work. Squashed some bugs. The usual.">
+      <created>1573681995149</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1573681995149</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
