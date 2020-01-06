@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Object_Arrays/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DecemberWarmups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GroupToDo/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/GroupToDo/Runner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Object_Arrays/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object_Arrays/Student.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,6 +54,11 @@
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Downloaded.Files.Path.Enabled" value="false" />
@@ -67,7 +75,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -90,26 +98,7 @@
       <recent name="Classes" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.Classroom">
-    <configuration name="CharWarmup" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CharWarmup" />
-      <module name="AP-CS" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Runner">
     <configuration name="Classroom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Object_Arrays.Classroom" />
       <module name="AP-CS" />
@@ -123,6 +112,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DecemberWarmups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DecemberWarmups" />
+      <module name="AP-CS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Palindrome" />
       <module name="AP-CS" />
@@ -130,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Runner (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Calculator.Runner" />
+    <configuration name="Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GroupToDo.Runner" />
       <module name="AP-CS" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Calculator.*" />
+          <option name="PATTERN" value="GroupToDo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,29 +139,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringSplitter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="StringSplitter" />
-      <module name="AP-CS" />
+    <configuration name="Scratch" type="Java Scratch" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Scratch" />
+      <option name="SCRATCH_FILE_URL" value="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Runner (1)" />
-      <item itemvalue="Application.StringSplitter" />
-      <item itemvalue="Application.CharWarmup" />
-      <item itemvalue="Application.Palindrome" />
       <item itemvalue="Application.Classroom" />
+      <item itemvalue="Application.DecemberWarmups" />
+      <item itemvalue="Application.Palindrome" />
+      <item itemvalue="Application.Runner" />
+      <item itemvalue="Java Scratch.Scratch" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Runner" />
+        <item itemvalue="Java Scratch.Scratch" />
+        <item itemvalue="Application.DecemberWarmups" />
         <item itemvalue="Application.Classroom" />
         <item itemvalue="Application.Palindrome" />
-        <item itemvalue="Application.CharWarmup" />
-        <item itemvalue="Application.Runner (1)" />
-        <item itemvalue="Application.StringSplitter" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -339,7 +347,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573681995149</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Finished some work. Squashed some bugs. The usual.">
+      <created>1574362118881</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1574362118881</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -361,5 +376,43 @@
     <MESSAGE value="More Files" />
     <MESSAGE value="Finished some work. Squashed some bugs. The usual." />
     <option name="LAST_COMMIT_MESSAGE" value="Finished some work. Squashed some bugs. The usual." />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1576093825702">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1576093825702" />
+    <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578248009114">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1578248009114" />
+    <state width="1398" height="122" key="GridCell.Tab.0.bottom" timestamp="1576136621225">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="122" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576136621225" />
+    <state width="1398" height="122" key="GridCell.Tab.0.center" timestamp="1576136621224">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="122" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
+    <state width="1398" height="122" key="GridCell.Tab.0.left" timestamp="1576136621224">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="122" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
+    <state width="1398" height="122" key="GridCell.Tab.0.right" timestamp="1576136621224">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="122" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1578334294094">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578334294094" />
+    <state x="492" y="169" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578334347207">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="492" y="169" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1578334347207" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1578334323731">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1578334323731" />
   </component>
 </project>

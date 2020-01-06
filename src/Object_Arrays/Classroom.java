@@ -1,7 +1,5 @@
 package Object_Arrays;
 
-import Blackjack.scanner.scanners.precisiondouble.DoubleInputScanner;
-
 import java.util.Arrays;
 
 public class Classroom {
@@ -17,25 +15,25 @@ public class Classroom {
         System.out.println();
         System.out.println(Arrays.toString(classC));
         System.out.println(Arrays.toString(Place_in_front(classC, 3)));
-        
+
     }
 
-    public static Student[] populateClass(Student[] arr){
+    public static Student[] populateClass(Student[] arr) {
         int random;
         String suffix;
-        for (int i = 0; i < arr.length; i++){
+        for (int i = 0; i < arr.length; i++) {
             if (i > 9 && i < 21)
                 suffix = "th";
-            else if (i%10 == 1)
+            else if (i % 10 == 1)
                 suffix = "st";
-            else if (i%10 == 2)
+            else if (i % 10 == 2)
                 suffix = "nd";
-            else if (i%10 == 3)
+            else if (i % 10 == 3)
                 suffix = "rd";
             else
                 suffix = "th";
 
-            random = (int)(4*Math.random());
+            random = (int) (4 * Math.random());
             if (random == 0)
                 arr[i] = new Student();
             else if (random == 1)
@@ -48,24 +46,24 @@ public class Classroom {
         return arr;
     }
 
-    public static Student find_Shortest(Student[] arr){
+    public static Student find_Shortest(Student[] arr) {
         Student result = null;
         double temp = Double.NEGATIVE_INFINITY;
-        for (Student stu : arr){
+        for (Student stu : arr) {
             if (stu.getHeight() < temp)
                 result = stu;
         }
         return result;
     }
 
-    public static Student[] find_Shortest(Student[] a, Student[] b){
-        Student[] result = null;
+    public static Student[] find_Shortest(Student[] a, Student[] b) {
+        Student[] result;
         double a_heights = 0;
         double b_heights = 0;
-        for (Student stu : a){
+        for (Student stu : a) {
             a_heights += stu.getHeight();
         }
-        for (Student stu : b){
+        for (Student stu : b) {
             b_heights += stu.getHeight();
         }
 
@@ -76,10 +74,10 @@ public class Classroom {
         return result;
     }
 
-    public static Student find_Student(Student[] arr, Student[] barr, String name){
+    public static Student find_Student(Student[] arr, Student[] barr, String name) {
         Student result = null;
-        for (Student stu : arr){
-            if (stu.getName().equals(name)){
+        for (Student stu : arr) {
+            if (stu.getName().equals(name)) {
                 result = stu;
                 break;
             }
@@ -95,7 +93,7 @@ public class Classroom {
         return result;
     }
 
-    public static Student[] swap_Location(Student[] arr, int i1, int i2){
+    public static Student[] swap_Location(Student[] arr, int i1, int i2) {
         Student temp = arr[i1];
         arr[i1] = arr[i2];
         arr[i2] = temp;
@@ -103,14 +101,13 @@ public class Classroom {
         return arr;
     }
 
-    public static Student[] Place_in_front(Student[] arr, int index){
+    public static Student[] Place_in_front(Student[] arr, int index) {
         Student target = arr[index];
         Student[] result = new Student[arr.length];
-        for (int i = 0; i < result.length; i ++){
+        for (int i = 0; i < result.length; i++) {
             try {
                 result[i + 1] = arr[i];
-            }
-            catch (Exception ignored){
+            } catch (Exception ignored) {
             }
         }
         result[0] = target;

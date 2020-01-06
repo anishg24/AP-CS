@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Student {
     public static int studentCount;
+    public Student classPartner;
     private String firstName;
     private String middleName;
     private String lastName;
@@ -11,30 +12,29 @@ public class Student {
     private int ID;
     private double height;
     private double[] grades = new double[6];
-    public Student classPartner;
 
     public Student() {
         studentCount++;
-        height = ((Math.random()*2)+5)*12;
+        height = ((Math.random() * 2) + 5) * 12;
 
-        for(int i = 0; i < grades.length; i++){
-            grades[i] = Math.random()*100;
+        for (int i = 0; i < grades.length; i++) {
+            grades[i] = Math.random() * 100;
         }
     }
 
-    public Student(String firstName, String lastName){
+    public Student(String firstName, String lastName) {
         this();
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public Student(String firstName, String middleName, String lastName){
+    public Student(String firstName, String middleName, String lastName) {
         this(firstName, lastName);
         this.middleName = middleName;
     }
 
-    public Student(String firstName, String middleName, String lastName, int age){
-        this(firstName, middleName,lastName);
+    public Student(String firstName, String middleName, String lastName, int age) {
+        this(firstName, middleName, lastName);
         this.age = age;
     }
 
@@ -70,7 +70,7 @@ public class Student {
         this.lastName = lastName;
     }
 
-    public String getName(){
+    public String getName() {
         return firstName + " " + middleName + " " + lastName;
     }
 
@@ -111,14 +111,14 @@ public class Student {
         this.classPartner.setClassPartner(this);
     }
 
-    public void displayGrades(){
+    public void displayGrades() {
         System.out.println(Arrays.toString(grades));
     }
 
-    public double calculateGPA(){
+    public double calculateGPA() {
         int sum = 0;
         double grade;
-        for (int i = 0; i < grades.length; i++){
+        for (int i = 0; i < grades.length; i++) {
             grade = grades[i];
             if (grade < 100 && grade >= 90)
                 sum += 4;
@@ -135,7 +135,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return this.getName();
-//        return firstName + " " + lastName + " is " + age + " years old with a height of " + height;
+//        return this.getName();
+        return firstName + " " + lastName + " is " + age + " years old with a height of " + height;
     }
 }
