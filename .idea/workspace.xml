@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/DecemberWarmups.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupToDo/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GroupToDo/Runner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/Anish.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance/Cube.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance/Driver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance/RectangularPrism.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Inheritance/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/anishg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/anishg.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object_Arrays/Classroom.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Object_Arrays/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Object_Arrays/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +48,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="NamedScopeManager">
+    <scope name="Scope" pattern="" />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -75,7 +80,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -87,18 +92,18 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/Blackjack/scanner" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/Blackjack_GUI" />
-    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Classes2" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Blackjack_GUI" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Blackjack.cards" />
       <recent name="Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Runner">
+  <component name="RunManager" selected="Application.Driver">
     <configuration name="Classroom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Object_Arrays.Classroom" />
       <module name="AP-CS" />
@@ -119,9 +124,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Palindrome" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Palindrome" />
+    <configuration name="Driver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Inheritance.Driver" />
       <module name="AP-CS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Inheritance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -149,17 +160,17 @@
     <list>
       <item itemvalue="Application.Classroom" />
       <item itemvalue="Application.DecemberWarmups" />
-      <item itemvalue="Application.Palindrome" />
       <item itemvalue="Application.Runner" />
       <item itemvalue="Java Scratch.Scratch" />
+      <item itemvalue="Application.Driver" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Driver" />
         <item itemvalue="Application.Runner" />
         <item itemvalue="Java Scratch.Scratch" />
         <item itemvalue="Application.DecemberWarmups" />
         <item itemvalue="Application.Classroom" />
-        <item itemvalue="Application.Palindrome" />
       </list>
     </recent_temporary>
   </component>
@@ -354,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574362118881</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Finished some work. Squashed some bugs. The usual.">
+      <created>1578334404655</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1578334404655</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,34 +396,42 @@
     <option name="LAST_COMMIT_MESSAGE" value="Finished some work. Squashed some bugs. The usual." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1576093825702">
+    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1578438817819">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1576093825702" />
+    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1578438817819" />
     <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1578248009114">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="408" y="196" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1440.877@0.23.1440.877" timestamp="1578248009114" />
-    <state width="1398" height="122" key="GridCell.Tab.0.bottom" timestamp="1576136621225">
+    <state x="342" y="23" key="CommitChangelistDialog2" timestamp="1578334404493">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="122" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1576136621225" />
-    <state width="1398" height="122" key="GridCell.Tab.0.center" timestamp="1576136621224">
+    <state x="342" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1578334404493" />
+    <state width="1398" height="137" key="GridCell.Tab.0.bottom" timestamp="1578531359935">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="122" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
-    <state width="1398" height="122" key="GridCell.Tab.0.left" timestamp="1576136621224">
+    <state width="1398" height="137" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1578531359935" />
+    <state width="1398" height="137" key="GridCell.Tab.0.center" timestamp="1578531359934">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="122" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
-    <state width="1398" height="122" key="GridCell.Tab.0.right" timestamp="1576136621224">
+    <state width="1398" height="137" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1578531359934" />
+    <state width="1398" height="137" key="GridCell.Tab.0.left" timestamp="1578531359934">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="122" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1576136621224" />
-    <state x="221" y="100" key="SettingsEditor" timestamp="1578334294094">
+    <state width="1398" height="137" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1578531359934" />
+    <state width="1398" height="137" key="GridCell.Tab.0.right" timestamp="1578531359935">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578334294094" />
+    <state width="1398" height="137" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1578531359935" />
+    <state x="221" y="63" key="SettingsEditor" timestamp="1578502016414">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578502016414" />
+    <state x="320" y="197" key="Vcs.Push.Dialog.v2" timestamp="1578334407275">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="320" y="197" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1578334407275" />
     <state x="492" y="169" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1578334347207">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
