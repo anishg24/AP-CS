@@ -8,13 +8,15 @@ package Inheritance;
 public class Cube extends RectangularPrism {
     public Cube() {
         this(1.);
-        this.printWhichConstructors(false);
+        System.out.println("I am entering the Cube's Normal constructor");
+        System.out.println("I am exiting the Cube's Normal constructor");
     }
 
     public Cube(double side) {
         super(side, side, side);
         super.calculate();
-        this.printWhichConstructors(true);
+        System.out.println("I am entering the Cube's Overloaded constructor");
+        System.out.println("I am exiting the Cube's Overloaded constructor");
     }
 
     public double getSide() {
@@ -40,5 +42,10 @@ public class Cube extends RectangularPrism {
     @Override
     public void setWidth(double width) {
         this.setSide(width);
+    }
+
+    @Override
+    public String toString() {
+        return "I am a Cube with side of " + this.getSide();
     }
 }

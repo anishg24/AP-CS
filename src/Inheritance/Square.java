@@ -9,12 +9,14 @@ public class Square extends Rectangle {
 
     public Square() {
         this(1.);
-        this.printWhichConstructors(false);
+        System.out.println("I am entering the Square's Normal constructor");
+        System.out.println("I am exiting the Square's Normal constructor");
     }
 
     public Square(double side) {
         super(side, side);
-        this.printWhichConstructors(true);
+        System.out.println("I am entering the Square's Overloaded constructor");
+        System.out.println("I am exiting the Square's Overloaded constructor");
     }
 
     public double getSide() {
@@ -34,5 +36,10 @@ public class Square extends Rectangle {
     @Override
     public void setWidth(double width) {
         this.setSide(width);
+    }
+
+    @Override
+    public String toString() {
+        return "I am a Square with side of " + this.getSide();
     }
 }

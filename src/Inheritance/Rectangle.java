@@ -13,14 +13,16 @@ public class Rectangle {
 
     public Rectangle() {
         this(1., 2.);
-        this.printWhichConstructors(false);
+        System.out.println("I am entering the Rectangle's Normal constructor");
+        System.out.println("I am exiting the Rectangle's Normal constructor");
     }
 
     public Rectangle(double length, double width) {
         this.length = length;
         this.width = width;
         this.calculate();
-        this.printWhichConstructors(true);
+        System.out.println("I am entering the Rectangle's Overloaded constructor");
+        System.out.println("I am exiting the Rectangle's Overloaded constructor");
     }
 
     public double getLength() {
@@ -54,34 +56,8 @@ public class Rectangle {
         this.perimeter = 2 * length + 2 * width;
     }
 
-    protected void printWhichConstructors(boolean overloaded){
-        String className = this.getClass().getSimpleName();
-        if (overloaded) {
-            System.out.println("I am entering the " + className + "'s Overloaded constructor");
-            System.out.println("I am exiting the " + className + "'s Overloaded constructor");
-        } else{
-            System.out.println("I am entering the " + className + "'s Normal constructor");
-            System.out.println("I am exiting the " + className + "'s Normal constructor");
-        }
-        if (this.getClass().getSuperclass().getSimpleName().equals("Object")) {
-            Class parentClass = this.getClass();
-            String parentClassName;
-            while (!parentClass.getSimpleName().equals("Object")) {
-                parentClassName = parentClass.getSimpleName();
-                System.out.println("I am entering the " + parentClassName + "'s Overloaded constructor");
-                System.out.println("I am exiting the " + parentClassName + "'s Overloaded constructor");
-                parentClass = parentClass.getSuperclass();
-            }
-        }
-    }
-
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "length=" + length +
-                ", width=" + width +
-                ", area=" + area +
-                ", perimeter=" + perimeter +
-                '}';
+        return "I am a Rectangle with a width of " + width + " and a length of " + length;
     }
 }
