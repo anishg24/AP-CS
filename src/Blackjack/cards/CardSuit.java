@@ -1,7 +1,7 @@
 package Blackjack.cards;
 
 public enum CardSuit {
-    HEARTS("♥"), CLUBS("♣"), DIAMONDS("♦"), SPADES("♠");
+    HEARTS("♥"), CLUBS("♣"), DIAMONDS("\u2666"), SPADES("♠");
 
     private String symbol;
 
