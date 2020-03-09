@@ -8,6 +8,7 @@ package Battleship;
 import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Battleship_Runner {
 
@@ -22,11 +23,55 @@ public class Battleship_Runner {
         clearScreen();
         clearScreen();
 
+//        int limit = p1.getOcean().getSize();
+//
+//        p1.placeShip(1, 2, p1.findShip(1));
+//        p1.placeShip(2, 2, p1.findShip(2));
+//        p1.placeShip(3, 2, p1.findShip(3));
+//        p1.placeShip(4, 2, p1.findShip(4));
+//        p1.placeShip(5, 2, p1.findShip(5));
+//
+//        p2.placeShip(1, 2, p2.findShip(1));
+//        p2.placeShip(2, 2, p2.findShip(2));
+//        p2.placeShip(3, 2, p2.findShip(3));
+//        p2.placeShip(4, 2, p2.findShip(4));
+//        p2.placeShip(5, 2, p2.findShip(5));
+//
+//        for(Ship s : p2.getNavy()){
+//            if (s.getID() == 1) continue;
+//            else s.nuke();
+//        }
+
+//        p1.getGuessOcean().hit(1, 3, p2);
+//        p1.printGuessOcean(p2);
+//        Ship s = p2.findShip(1);
+//        System.out.println(Arrays.deepToString(s.getShape()));
+//        p1.getGuessOcean().hit(2, 3, p2);
+//        p1.printGuessOcean(p2);
+//        Ship s = p2.findShip(2);
+//        System.out.println(Arrays.deepToString(s.getShape()));
+//        p1.getGuessOcean().hit(3, 3, p2);
+//        p1.printGuessOcean(p2);
+//        Ship s = p2.findShip(3);
+//        System.out.println(Arrays.deepToString(s.getShape()));
+
         while (p1.getShipsLeft() != 0 || p2.getShipsLeft() != 0){
-            System.out.println(p1.getName() + " it's your turn to shoot!");
-
+            shoot(p1, p2);
+            if (p2.getShipsLeft() == 0) break;
+            System.out.println("Get ready to pass the game!");
+            sleep(3);
+            clearScreen();
+            clearScreen();
+            shoot(p2, p1);
+            if (p1.getShipsLeft() == 0) break;
+            System.out.println("Get ready to pass the game!");
+            sleep(3);
+            clearScreen();
+            clearScreen();
         }
-
+        clearScreen();
+        if (p1.getShipsLeft() == 0) System.out.println(p2.getName() + " wins!");
+        else System.out.println(p1.getName() + " wins!");
     }
 
     private static void setup(Player p) {
@@ -60,12 +105,16 @@ public class Battleship_Runner {
                 col = getColumn("What column do you want to place your " + ship.getName() + "? ", limit);
             }
             if (!p.placeShip(row, col, ship))System.out.println("You can't place your ship there!");
-            else System.out.println("Placed " + ship.getName() + " at (" + row + ", " + col + ")");
+            else {
+                clearScreen();
+                System.out.println("Placed " + ship.getName() + " at (" + row + ", " + col + ")");
+            }
         }
+        clearScreen();
     }
 
     private static void clearScreen() {
-        System.out.println(new String(new char[50]).replace("\0", "\r\n"));
+        System.out.println(new String(new char[100]).replace("\0", "\r\n"));
     }
 
     private static int getRow(String message, String[] rowLabels){
@@ -147,7 +196,25 @@ public class Battleship_Runner {
         return ship;
     }
 
-    private static void shoot(){
+    private static void shoot(Player main, Player target) {
+        int limit = target.getOcean().getSize();
+        System.out.println(main.getName() + " it's your turn to shoot!");
+        main.printGuessOcean(target);
+        int row = getRow("What row do you want to shoot at? ", main.getOcean().getRowLabels());
+        int col = getColumn("What column do you want to shoot at? ", limit);
+        clearScreen();
+        boolean a = main.getGuessOcean().hit(row, col, target);
+        main.printGuessOcean(target);
+        if (a) System.out.print("HIT");
+        else System.out.print("MISS");
+        System.out.println( " at (" + row + ", " + col +")!");
+    }
 
+    private static void sleep(int s){
+        try {
+            TimeUnit.SECONDS.sleep(s);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -43,7 +43,11 @@ public class Player {
 
     public void printOcean() {
         System.out.println(name + "'s Ocean:");
-        this.ocean.print(this);
+        this.ocean.print(this, false);
+    }
+
+    public void printGuessOcean(Player p){
+        this.guessOcean.print(p, true);
     }
 
     public Ship findShip(int ID) {
@@ -83,6 +87,7 @@ public class Player {
         String display_format;
         for (Ship c : navy) {
             if (c.isDestroyed()) status = "DESTROYED";
+            else if (c.isHit()) status = "DAMAGED";
             else if (c.isDeployed()) status = "DEPLOYED";
             else status = "READY TO FIGHT";
 

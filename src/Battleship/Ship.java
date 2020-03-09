@@ -5,6 +5,8 @@
 
 package Battleship;
 
+import java.util.Arrays;
+
 public class Ship {
     public static int ship_count;
     private String name;
@@ -13,6 +15,8 @@ public class Ship {
     private int ID;
     private boolean is_horizontal = true;
     private boolean deployed = false;
+    private int[] coordinates = new int[2];
+    private boolean hit = false;
 
     public Ship(String name, int length, int ID) {
         this.name = name;
@@ -34,7 +38,9 @@ public class Ship {
         return deployed;
     }
 
-    public void setDeployed(boolean deployed) {
+    public void setDeployed(boolean deployed, int r, int c) {
+        this.coordinates[0] = r;
+        this.coordinates[1] = ++c;
         this.deployed = deployed;
     }
 
@@ -77,9 +83,11 @@ public class Ship {
 
     public void hit(int pos) {
         try {
-            if (is_horizontal) this.shape[0][pos - 1] = true;
-            else this.shape[pos - 1][0] = true;
+            if (is_horizontal) this.shape[0][pos-1] = true;
+            else this.shape[pos-1][0] = true;
+            this.hit = true;
         } catch (Exception ignored) {
+            System.out.println("ERROR");
         }
     }
 
@@ -103,5 +111,25 @@ public class Ship {
         }
     }
 
+    public int[] getCoordinates() {
+        return coordinates;
+    }
+
+    @Override
+    public String toString() {
+        return "Ship{" +
+                "name='" + name + '\'' +
+                ", length=" + length +
+                ", ID=" + ID +
+                ", is_horizontal=" + is_horizontal +
+                ", deployed=" + deployed +
+                ", coordinates=" + Arrays.toString(coordinates) +
+                ", hit=" + hit +
+                '}';
+    }
+
+    public boolean isHit(){
+        return hit;
+    }
 }
 

@@ -16,6 +16,8 @@ public class Ocean {
     // 0 - Empty
     // 1-5 - Occupied
     // * - Destroyed Spot
+    // 69 - Arbitrary number to list a hit on enemy
+    // 42 - Arbitrary number to list a miss on enemy
 
     public Ocean(int size) {
         this.size = size;
@@ -48,9 +50,14 @@ public class Ocean {
     }
 
     public void print() {
-        for (int[] r : shape) {
-            for (int c : r) {
-                System.out.print(c + "\t");
+        setupGrid();
+
+        for (int r = 0; r < rowLabels.length; r++) {
+            System.out.print(rowLabels[r] + "\t│\t"); // USE SYSTEM.OUT.FORMAT
+            for (int c : shape[r]) {
+                if (c == 69) System.out.print("X\t"); // Hit
+                else if (c == 42) System.out.print("M\t"); // Miss
+                else System.out.print("\u2610\t"); // Empty
             }
             System.out.println();
         }
@@ -61,7 +68,26 @@ public class Ocean {
         this.print();
     }
 
-    public void print(Player player) {
+    public void print(Player player, boolean isClouded) {
+        setupGrid();
+        String[] rowLabels = player.getOcean().getRowLabels();
+        int[][] shape = player.getOcean().getShape();
+        for (int r = 0; r < rowLabels.length; r++) {
+            System.out.print(rowLabels[r] + "\t│\t"); // USE SYSTEM.OUT.FORMAT
+            for (int c : shape[r]) {
+                if (c != 0 && player.findShip(c).isDestroyed()) {
+                    if (isClouded) System.out.print("X\t"); // Only if hit & a guess board
+                    else System.out.print("*\t");
+                }
+                else if (c == 42) System.out.print("M\t"); // Miss
+                else if (c != 0 && !isClouded) System.out.print(c + "\t");
+                else System.out.print("\u2610\t"); // Empty
+            }
+            System.out.println();
+        }
+    }
+
+    private void setupGrid() {
         System.out.print("X\t│\t");
         String column = "";
         String divider = "";
@@ -72,15 +98,6 @@ public class Ocean {
         divider = divider.concat("–––––");
         System.out.println(column);
         System.out.println(divider);
-
-        for (int r = 0; r < rowLabels.length; r++) {
-            System.out.print(rowLabels[r] + "\t│\t"); // USE SYSTEM.OUT.FORMAT
-            for (int c : shape[r]) {
-                if (c != 0 && player.findShip(c).isDestroyed()) System.out.print("*\t");
-                else System.out.print(c + "\t");
-            }
-            System.out.println();
-        }
     }
 
     public int[][] getShape() {
@@ -96,7 +113,7 @@ public class Ocean {
 //                System.out.println("You can't place the ship out of bounds! Rotate it or choose somewhere else!");
                 return false;
             } else {
-                ship.setDeployed(true);
+                ship.setDeployed(true, r, c);
                 for (int col = c; col < ship.getLength() + c; col++) {
                     shape[r][col] = ship.getID();
                 }
@@ -106,7 +123,7 @@ public class Ocean {
 //                System.out.println("You can't place the ship out of bounds! Rotate it or choose somewhere else!");
                 return false;
             } else {
-                ship.setDeployed(true);
+                ship.setDeployed(true, r, c);
                 for (int row = r; row <= ship.getLength() + r; row++) {
                     shape[row][c] = ship.getID();
                 }
@@ -125,5 +142,23 @@ public class Ocean {
 
     public String[] getRowLabels() {
         return rowLabels;
+    }
+
+    public boolean hit(int r, int c, Player p){
+        c --;
+        Ocean ocean = p.getOcean();
+        int zone = ocean.getShape()[r][c];
+        if (ocean.getShape()[r][c] != 0) {
+            Ship ship = p.findShip(zone);
+            boolean is_h = ship.isHorizontal();
+            int pos;
+            if(is_h) pos = Math.abs(ship.getCoordinates()[0] - c);
+            else pos = Math.abs(ship.getCoordinates()[1] - r);
+            if (pos == 0) pos ++; // TODO: Create a permanent fix to this error; Ship on c3 will have an error on hit.
+            ship.hit(pos);
+            this.shape[r][c] = 69;
+            return true;
+        } else this.shape[r][c] = 42;
+        return false;
     }
 }

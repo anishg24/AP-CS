@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f1c87c9-e0ec-47d5-96c6-de576202019d" name="Default Changelist" comment="Finished some work. Squashed some bugs. The usual.">
-      <change afterPath="$PROJECT_DIR$/src/Battleship/Battleship_Runner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Battleship/Ocean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Battleship/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Battleship/Ship.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingAlgorithms/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingAlgorithms/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingAlgorithms/SelectionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SortingAlgorithms/SortingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AP-CS.iml" beforeDir="false" afterPath="$PROJECT_DIR$/AP-CS.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Blackjack/cards/CardSuit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battleship/Battleship_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battleship/Battleship_Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battleship/Ocean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battleship/Ocean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battleship/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battleship/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Battleship/Ship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Battleship/Ship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,13 +74,14 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="create.test.in.the.same.root" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -113,7 +108,7 @@
       <recent name="Classes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="Application.Battleship_Runner">
     <configuration name="Battleship_Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Battleship.Battleship_Runner" />
       <module name="AP-CS" />
@@ -184,8 +179,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.Battleship_Runner" />
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.SortingMachine" />
         <item itemvalue="Application.Blackjack_Runner" />
         <item itemvalue="Java Scratch.Scratch" />
@@ -229,6 +224,8 @@
       <workItem from="1583180276955" duration="1059000" />
       <workItem from="1583437143997" duration="3642000" />
       <workItem from="1583525617935" duration="752000" />
+      <workItem from="1583690017624" duration="61000" />
+      <workItem from="1583690094538" duration="8009000" />
     </task>
     <task id="LOCAL-00001" summary="Finished Labs">
       <created>1568139765594</created>
@@ -453,10 +450,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Finished some work. Squashed some bugs. The usual." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser" timestamp="1582130297375">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1273" y="231" key="#com.intellij.ide.util.MemberChooser" timestamp="1583693808792">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="533" y="152" key="#com.intellij.ide.util.MemberChooser/0.23.1440.877@0.23.1440.877" timestamp="1582130297375" />
+    <state x="1273" y="231" key="#com.intellij.ide.util.MemberChooser/0.23.3440.1417@0.23.3440.1417" timestamp="1583693808792" />
     <state x="458" y="244" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1583526329265">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -473,50 +471,62 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="342" y="23" key="CommitChangelistDialog2/0.23.1440.877@0.23.1440.877" timestamp="1582054460282" />
-    <state width="1398" height="618" key="GridCell.Tab.0.bottom" timestamp="1583606046182">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="3398" height="553" key="GridCell.Tab.0.bottom" timestamp="1583718356849">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="618" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1583606046182" />
-    <state width="1398" height="618" key="GridCell.Tab.0.center" timestamp="1583606046181">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="3398" height="553" key="GridCell.Tab.0.bottom/0.23.3440.1417@0.23.3440.1417" timestamp="1583718356849" />
+    <state width="3398" height="553" key="GridCell.Tab.0.center" timestamp="1583718356848">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="618" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1583606046181" />
-    <state width="1398" height="618" key="GridCell.Tab.0.left" timestamp="1583606046179">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="3398" height="553" key="GridCell.Tab.0.center/0.23.3440.1417@0.23.3440.1417" timestamp="1583718356848" />
+    <state width="3398" height="553" key="GridCell.Tab.0.left" timestamp="1583718356848">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="618" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1583606046179" />
-    <state width="1398" height="618" key="GridCell.Tab.0.right" timestamp="1583606046181">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="3398" height="553" key="GridCell.Tab.0.left/0.23.3440.1417@0.23.3440.1417" timestamp="1583718356848" />
+    <state width="3398" height="553" key="GridCell.Tab.0.right" timestamp="1583718356848">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state width="1398" height="618" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1583606046181" />
-    <state x="221" y="63" key="SettingsEditor" timestamp="1578686583878">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state width="3398" height="553" key="GridCell.Tab.0.right/0.23.3440.1417@0.23.3440.1417" timestamp="1583718356848" />
+    <state x="528" y="88" key="SettingsEditor" timestamp="1583690283701">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="221" y="63" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1578686583878" />
+    <state x="528" y="88" key="SettingsEditor/0.23.3440.1417@0.23.3440.1417" timestamp="1583690283701" />
     <state x="320" y="197" key="Vcs.Push.Dialog.v2" timestamp="1580328856779">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="320" y="197" key="Vcs.Push.Dialog.v2/0.23.1440.877@0.23.1440.877" timestamp="1580328856779" />
-    <state x="397" y="294" key="com.intellij.ide.util.TipDialog" timestamp="1578685171634">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="948" y="461" key="com.intellij.ide.util.TipDialog" timestamp="1583690020273">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="397" y="294" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1578685171634" />
+    <state x="948" y="461" key="com.intellij.ide.util.TipDialog/0.23.3440.1417@0.23.3440.1417" timestamp="1583690020273" />
     <state x="424" y="357" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583526395460">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="424" y="357" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1440.877@0.23.1440.877" timestamp="1583526395460" />
+    <state x="1210" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583694468409">
+      <screen x="0" y="23" width="3440" height="1417" />
+    </state>
+    <state x="1210" y="328" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.23.3440.1417@0.23.3440.1417" timestamp="1583694468409" />
     <state x="492" y="169" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1583526380243">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="492" y="169" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1440.877@0.23.1440.877" timestamp="1583526380243" />
-    <state x="754" y="145" key="extract.method.dialog" timestamp="1582574759814">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1801" y="220" key="extract.method.dialog" timestamp="1583690864743">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="754" y="145" key="extract.method.dialog/0.23.1440.877@0.23.1440.877" timestamp="1582574759814" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582921101121">
-      <screen x="0" y="23" width="1440" height="877" />
+    <state x="1801" y="220" key="extract.method.dialog/0.23.3440.1417@0.23.3440.1417" timestamp="1583690864743" />
+    <state x="920" y="330" width="1601" height="1093" key="search.everywhere.popup" timestamp="1583718243814">
+      <screen x="0" y="23" width="3440" height="1417" />
     </state>
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582921101120" />
+    <state x="920" y="330" width="1601" height="1093" key="search.everywhere.popup/0.23.3440.1417@0.23.3440.1417" timestamp="1583718243814" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
